@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RedisHelloWorld {
     @Autowired
-    private RedisTemplate<String,Object> redisTemplate;
+    private RedisTemplate redisTemplate;
 
     @RequestMapping("redis/test")
     public String test() {
